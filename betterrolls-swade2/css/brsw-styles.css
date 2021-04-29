@@ -115,20 +115,16 @@
     color: black;
 }
 
-.brws-selectable.brws-selected:before {
-    content: "\f00c";
-    color: green;
-    font-weight: 900;
-}
-
 .brws-selectable.brws-selected.brws-permanent-selected:before{
-    content: "\f560";
+    content: "\f276";
+    #content: "\f08d";
     font-weight: 900;
-    color: green;
+    color: black;
+    font-size: 13px;
 }
 
-.brsw-chat-form .brws-selectable.brws-selected,
-.brsw-chat-form .brws-selectable.permanent-selected
+.brws-selectable.brws-selected,
+.brws-selectable.permanent-selected
 {
     position: relative;
 }
@@ -136,14 +132,24 @@
 .brsw-chat-form .brws-selectable.brws-selected:before,
 .brsw-chat-form .brws-selectable.permanent-selected:before
 {
-    color: #2bec5c;
+    color: white;
+}
+
+.brws-selectable.brws-selected:before {
+    position: absolute;
+
+
+}
+.brsw-form .brws-selectable.brws-selected:before {
+    top: -11px;
+    right: 40%;
 }
 
 .brsw-chat-form .brws-selectable.brws-selected:before {
-    position: absolute;
-    top: -12px;
-    right: 0
+    top: -13px;
+    right: 30%;
 }
+
 
 .brsw-modifier {
     padding: 1px;
